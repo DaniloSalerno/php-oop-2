@@ -13,7 +13,7 @@
 
                             <div class="card-body">
 
-                                <div>Per: <?= $product->getIcon() ?></div>
+                                <div>Per: <?= $product->categories->getIcon() ?></div>
                                 <div><strong>Nome:</strong> <?= $product->name ?></div>
                                 <div><strong>Prezzo</strong> <?= $product->price ?></div>
                                 <div><strong>Animale:</strong> <?= $product->categories->animal ?></div>

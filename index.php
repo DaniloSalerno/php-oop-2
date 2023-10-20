@@ -25,6 +25,8 @@ require_once ROOT . DS . 'models' . DS . 'categories.php';
 
 require_once ROOT . DS . 'models' . DS . 'products.php';
 
+require_once ROOT . DS . 'db.php';
+
 require_once ROOT . DS . 'partials' . DS . 'head.php';
 
 require_once ROOT . DS . 'partials' . DS . 'main.php';
