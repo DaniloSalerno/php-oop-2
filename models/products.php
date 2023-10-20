@@ -11,11 +11,43 @@ class Products
 
     function __construct($_name, $_price, Categories $Categories, $_type, $_image)
     {
-        $this->name = $_name;
-        $this->price = $_price;
+        $this->setName($_name);
+        $this->setPrice($_price);
         $this->categories = $Categories;
         $this->type = $this->types[$_type];
+        $this->setImage($_image);
+    }
+
+    //setters
+    function setName($_name)
+    {
+        $this->name = $_name;
+    }
+
+    function setPrice($_price)
+    {
+        $this->price = $_price;
+    }
+
+    function setImage($_image)
+    {
         $this->image = $_image;
+    }
+
+    //getters
+    function getName()
+    {
+        return $this->name;
+    }
+
+    function getPrice()
+    {
+        return $this->price;
+    }
+
+    function getImage()
+    {
+        return $this->image;
     }
 };
 
