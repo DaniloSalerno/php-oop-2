@@ -19,6 +19,3 @@ class Categories
         }
     }
 }
-
-$dog_categories = new Categories('cane');
-$cat_categories = new Categories('gatto');
