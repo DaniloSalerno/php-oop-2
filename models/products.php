@@ -1,28 +1,42 @@
 <?php
+
 class Products
 {
     public $price;
     public $name;
+    public $categories;
+    public $type;
+    public $image;
 
-    function __construct($_name, $_price)
+    function __construct($_name, $_price, Categories $Categories, $_type)
     {
         $this->name = $_name;
         $this->price = $_price;
+        $this->categories = $Categories;
+        $this->type = $_type;
+    }
+
+    function getIcon()
+    {
+        if (strtolower($this->categories->animal) == 'cane') {
+            return 'icona cane';
+        } elseif (strtolower($this->categories->animal) == 'gatto') {
+            return 'icona gatto';
+        } {
+        }
     }
 };
 
-class Categories extends Products
-{
-    public $animal;
 
-    function __construct($_animal)
-    {
-        $this->animal = $_animal;
-    }
-}
 
-$products = new Products('Croccantini', 9.99);
-var_dump($products);
+$products = [
+    new Products('Croccantini', 9.99, $dog_categories, 'Cibo'),
+    new Products('Carne', 19.99, $dog_categories, 'Cibo'),
+    new Products('Gioco', 29.99, $cat_categories, 'Gioco')
+];
 
-$categories = new Categories('Cane');
-var_dump($categories);
+
+
+
+/* var_dump($cat_products);
+var_dump($dog_products); */
