@@ -2,8 +2,8 @@
 
 $categories = [
 
-    $dog_categories = new Categories('cane'),
-    $cat_categories = new Categories('gatto'),
+    new Categories('cane'),
+    new Categories('gatto'),
 
 ];
 
