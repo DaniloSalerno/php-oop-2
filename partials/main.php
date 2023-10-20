@@ -1,4 +1,4 @@
-<main class="mt-5">
+<main class="py-5">
     <section id="products">
         <div class="container">
             <div class="row row-cols-3 g-5">
@@ -7,14 +7,17 @@
 
                     <div class="col">
 
-                        <div class="card">
+                        <div class="card border-0">
+
+                            <img width="250" src="<?= $product->image ?>" alt="">
 
                             <div class="card-body">
 
-                                <div>Nome: <?= $product->name ?></div>
-                                <div>Prezzo <?= $product->price ?></div>
-                                <div>Animale: <?= $product->categories->animal ?></div>
-                                <div>Tipo: <?= $product->type ?></div>
+                                <div>Per: <?= $product->getIcon() ?></div>
+                                <div><strong>Nome:</strong> <?= $product->name ?></div>
+                                <div><strong>Prezzo</strong> <?= $product->price ?></div>
+                                <div><strong>Animale:</strong> <?= $product->categories->animal ?></div>
+                                <div><strong>Tipo:</strong> <?= $product->type ?></div>
 
                             </div>
 
