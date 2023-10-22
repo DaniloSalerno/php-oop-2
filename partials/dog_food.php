@@ -1,4 +1,4 @@
-<h4>Cibo:</h4>
+<h4 class="pt-4 fw-bold">Cibo:</h4>
 
 <div class="row row-cols-3 g-5">
 

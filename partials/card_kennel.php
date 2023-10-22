@@ -8,15 +8,15 @@
 
         <div><strong>Nome:</strong> <?= $product->getName() ?></div>
 
-        <div><strong>Prezzo</strong> <?= $product->getPrice() ?></div>
+        <div><strong>Prezzo:</strong> <?= $product->getPrice() ?> &euro;</div>
 
-        <div><strong>Colore</strong> <?= $product->getColor() ?></div>
+        <div><strong>Colore:</strong> <?= $product->getColor() ?></div>
 
-        <div><strong>Peso</strong> <?= $product->getWeight() ?></div>
+        <div><strong>Peso:</strong> <?= $product->getWeight() ?> Kg</div>
 
-        <div><strong>Aletezza</strong> <?= $product->getHeight() ?></div>
+        <div><strong>Aletezza:</strong> <?= $product->getHeight() ?> Cm</div>
 
-        <div><strong>Larghezza</strong> <?= $product->getWidth() ?></div>
+        <div><strong>Larghezza:</strong> <?= $product->getWidth() ?> Cm</div>
 
     </div>
 

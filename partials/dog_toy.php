@@ -1,4 +1,4 @@
-<h4>Giocattoli:</h4>
+<h4 class="pt-4 fw-bold">Giocattoli:</h4>
 
 <div class="row row-cols-3 g-5">
 
