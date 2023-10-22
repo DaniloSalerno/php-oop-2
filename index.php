@@ -11,10 +11,10 @@ Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, 
 
 <?php
 
-$debug = true; // cambiate in true e false in base se volete o meno vedere gli errori
+$debug = true;
 if ($debug == true) {
-    ini_set('display_errors', 1); // imposta il file php.ini a mostrare gli errori
-    error_reporting(E_ALL); // imposta il livello di errori da mostrare E_ALL tutti
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
 }
 
 define('ROOT', __DIR__);
@@ -24,6 +24,12 @@ define('DS', DIRECTORY_SEPARATOR);
 require_once ROOT . DS . 'models' . DS . 'categories.php';
 
 require_once ROOT . DS . 'models' . DS . 'products.php';
+
+require_once ROOT . DS . 'models' . DS . 'food.php';
+
+require_once ROOT . DS . 'models' . DS . 'toy.php';
+
+require_once ROOT . DS . 'models' . DS . 'kennel.php';
 
 require_once ROOT . DS . 'db.php';
 

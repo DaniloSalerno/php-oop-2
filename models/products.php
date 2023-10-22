@@ -2,20 +2,17 @@
 
 class Products
 {
-    public $price;
-    public $name;
-    public $categories;
-    public $types = ['Cibo', 'Gioco', 'Cuccia', 'Altro'];
-    public $image;
-    public $type;
+    protected $price;
+    protected $name;
+    protected $categories;
+    protected $image;
 
-    function __construct($_name, $_price, Categories $Categories, $_type, $_image)
+    function __construct($_name, $_price, $_image, Categories $Categories)
     {
         $this->setName($_name);
         $this->setPrice($_price);
-        $this->categories = $Categories;
-        $this->type = $this->types[$_type];
         $this->setImage($_image);
+        $this->setCategories($Categories);
     }
 
     //setters
@@ -34,6 +31,11 @@ class Products
         $this->image = $_image;
     }
 
+    function setCategories($Categories)
+    {
+        $this->categories = $Categories;
+    }
+
     //getters
     function getName()
     {
@@ -48,6 +50,11 @@ class Products
     function getImage()
     {
         return $this->image;
+    }
+
+    function getCategories()
+    {
+        return $this->categories;
     }
 };
 
