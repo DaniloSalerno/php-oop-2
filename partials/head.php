@@ -18,11 +18,12 @@
 
                 <div class="navbar-nav">
 
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                    <a class="nav-link active" aria-current="page" href="#">Lista Prodotti</a>
+                    <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                    <a class="nav-link" aria-current="page" href="#">Lista Prodotti</a>
                     <a class="nav-link" aria-current="page" href="#">Contatti</a>
                     <a class="nav-link" aria-current="page" href="#">Supporto</a>
-                    <a class="nav-link" aria-current="page" href="#">Altro</a>
+                    <a class="nav-link" aria-current="page" href="dog.php">Prodotti per Cani</a>
+                    <a class="nav-link" aria-current="page" href="cat.php">Prodotti per Gatti</a>
 
 
                 </div>
