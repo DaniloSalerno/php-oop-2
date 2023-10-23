@@ -1,7 +1,8 @@
 <?php
-
 class Food extends Products
 {
+    use Weight;
+    use Expiration;
     public $type = 'Cibo';
     protected $expiration;
     protected $weight;
@@ -11,31 +12,5 @@ class Food extends Products
         parent::__construct($_name, $_price, $_image, $Categories);
         $this->setExpiration($_expiration);
         $this->setWeight($_weight);
-    }
-
-
-
-    //setters
-    public function setExpiration($_expiration)
-    {
-        $this->expiration = $_expiration;
-    }
-
-    public function setWeight($_weight)
-    {
-        $this->weight = $_weight;
-    }
-
-
-
-    //getters
-    public function getExpiration()
-    {
-        return $this->expiration;
-    }
-
-    public function getWeight()
-    {
-        return $this->weight;
     }
 }

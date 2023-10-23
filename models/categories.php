@@ -1,7 +1,7 @@
 <?php
-
 class Categories
 {
+    use Animal;
     protected $animal;
 
     function __construct($_animal)
@@ -17,16 +17,5 @@ class Categories
             return '<img width="30" src="./img/icon-cat.jpg" alt="Icona di un Gatto">';
         } {
         }
-    }
-
-    //setters
-    function setAnimal($_animal)
-    {
-        $this->animal = $_animal;
-    }
-
-    function getAnimal()
-    {
-        return $this->animal;
     }
 }

@@ -1,7 +1,10 @@
 <?php
-
 class Products
 {
+    use Name;
+    use Price;
+    use Image;
+    use Category;
     protected $price;
     protected $name;
     protected $categories;
@@ -14,53 +17,4 @@ class Products
         $this->setImage($_image);
         $this->setCategories($Categories);
     }
-
-    //setters
-    function setName($_name)
-    {
-        $this->name = $_name;
-    }
-
-    function setPrice($_price)
-    {
-        $this->price = $_price;
-    }
-
-    function setImage($_image)
-    {
-        $this->image = $_image;
-    }
-
-    function setCategories($Categories)
-    {
-        $this->categories = $Categories;
-    }
-
-    //getters
-    function getName()
-    {
-        return $this->name;
-    }
-
-    function getPrice()
-    {
-        return $this->price;
-    }
-
-    function getImage()
-    {
-        return $this->image;
-    }
-
-    function getCategories()
-    {
-        return $this->categories;
-    }
 };
-
-
-
-
-
-/* var_dump($cat_products);
-var_dump($dog_products); */

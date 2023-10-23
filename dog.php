@@ -3,6 +3,8 @@ define('ROOT', __DIR__);
 
 define('DS', DIRECTORY_SEPARATOR);
 
+require_once ROOT . DS . 'traits' . DS . 'traits.php';
+
 require_once ROOT . DS . 'models' . DS . 'categories.php';
 
 require_once ROOT . DS . 'models' . DS . 'products.php';

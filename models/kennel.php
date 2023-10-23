@@ -1,7 +1,10 @@
 <?php
-
 class Kennel extends Products
 {
+    use Weight;
+    use Color;
+    use Width;
+    use Height;
     public $type = 'Cuccia';
     protected $color;
     protected $weight;
@@ -16,51 +19,5 @@ class Kennel extends Products
         $this->setColor($_color);
         $this->setWidth($_width);
         $this->setHeight($_height);
-    }
-
-
-
-    //setters
-    public function setColor($_color)
-    {
-        $this->color = $_color;
-    }
-
-    public function setWeight($_weight)
-    {
-        $this->weight = $_weight;
-    }
-
-    public function setWidth($_width)
-    {
-        $this->width = $_width;
-    }
-
-    public function setHeight($_height)
-    {
-        $this->height = $_height;
-    }
-
-
-
-    //getters
-    public function getColor()
-    {
-        return $this->color;
-    }
-
-    public function getWeight()
-    {
-        return $this->weight;
-    }
-
-    public function getWidth()
-    {
-        return $this->width;
-    }
-
-    public function getHeight()
-    {
-        return $this->height;
     }
 }
