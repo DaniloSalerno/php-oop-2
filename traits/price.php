@@ -4,21 +4,29 @@ trait Price
 {
     function setPrice($_price)
     {
-        if (is_numeric($_price)) {
+        //è corretto???
+        try {
 
-            if ($_price < 0.1) {
+            if (is_numeric($_price)) {
 
-                throw new RangeException('The value of price is too low,inser a value superior of 0.1');
-            } else if ($_price > 999) {
+                if ($_price < 0.1) {
 
-                throw new RangeException('The value of price is too hight,inser a value inferior of 999');
+                    throw new RangeException('The value of price is too low,inser a value superior of 0.1');
+                } else if ($_price > 999) {
+
+                    throw new RangeException('The value of price is too hight,inser a value inferior of 999');
+                } else {
+
+                    $this->price = $_price;
+                }
             } else {
 
-                $this->price = $_price;
+                throw new InvalidArgumentException('The value of price is not valid,insert a number value');
             }
-        } else {
-
-            throw new InvalidArgumentException('The value of price is not valid,insert a number value');
+        } catch (Exception $error) {
+            echo 'ERROR : ' . $error->getMessage();
+            echo '<br>';
+            echo $error->getTraceAsString();
         }
     }
 
