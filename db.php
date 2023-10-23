@@ -2,7 +2,7 @@
 
 $food_list = [
 
-    new Food('Crocchette', 9993.99, 'https://picsum.photos/200/300?random=1', new Categories('Cane'), '2023/11/22', 0.500),
+    new Food('Crocchette', 3.99, 'https://picsum.photos/200/300?random=1', new Categories('Cane'), '2023/11/22', 0.500),
     new Food('Bocconi con Manzo', 5.99, 'https://picsum.photos/200/300?random=2', new Categories('Gatto'), '2023/11/23', 0.300),
     new Food('Croccantini', 7.50, 'https://picsum.photos/200/300?random=3', new Categories('Cane'), '2023/12/22', 0.250),
     new Food('Cibo in scatola', 11.20, 'https://picsum.photos/200/300?random=4', new Categories('Gatto'), '2023/11/24', 0.450),
